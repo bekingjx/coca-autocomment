@@ -1,65 +1,37 @@
-# ucomment-inserter README
+# UComment Date Inserter
 
-This is the README for your extension "ucomment-inserter". After writing up a brief description, we recommend including the following sections.
+Inserisce rapidamente un commento formattato con la data, l'ora e il tuo nome utente Git.
 
-## Features
+## Caratteristiche
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Basta digitare `COCA` in un file supportato e premere Invio per inserire un commento formattato in base al linguaggio del file.
 
-For example if there is an image subfolder under your extension project workspace:
+Il formato del commento è: `DD MM YY HH:mm - NomeUtenteGit`
 
-\!\[feature X\]\(images/feature-x.png\)
+**Esempio in JavaScript:**
+`// 27 10 23 16:10 - Mario Rossi`
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+**Esempio in HTML:**
+`<!-- 27 10 23 16:11 - Mario Rossi -->`
 
-## Requirements
+Se il nome utente Git non è configurato, viene inserita solo la data e l'ora.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Linguaggi Supportati
 
-## Extension Settings
+*   HTML (`.html`, `.htm`)
+*   CSS (`.css`)
+*   JavaScript (`.js`, `.jsx`)
+*   TypeScript (`.ts`, `.tsx`)
+*   SCSS (`.scss`)
+*   SASS (`.sass`)
+*   YAML (`.yaml`, `.yml`)
+*   XML (`.xml`)
+*   Smarty (`.tpl`)
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## Requisiti
 
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+L'estensione Git integrata in VS Code è necessaria per recuperare il nome utente.
 
 ---
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**
