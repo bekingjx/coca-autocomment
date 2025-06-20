@@ -1,0 +1,48 @@
+{
+  "name": "ucomment-inserter",
+  "displayName": "UComment Date Inserter",
+  "description": "Inserisce un commento con data, ora e nome utente Git, attivato da 'UCOMMENT'.",
+  "version": "0.0.2",
+  "publisher": "IL-TUO-NOME-PUBLISHER",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Snippets",
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:html",
+    "onLanguage:css",
+    "onLanguage:javascript",
+    "onLanguage:javascriptreact",
+    "onLanguage:typescript",
+    "onLanguage:typescriptreact",
+    "onLanguage:smarty",
+    "onLanguage:yaml",
+    "onLanguage:xml",
+    "onLanguage:scss",
+    "onLanguage:sass"
+  ],
+  "main": "./extension.js",
+  "contributes": {},
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.75.0",
+    "@types/glob": "^8.0.1",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "eslint": "^8.28.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.3",
+    "@vscode/test-electron": "^2.2.0"
+  },
+  "extensionDependencies": [
+    "vscode.git"
+  ]
+}
